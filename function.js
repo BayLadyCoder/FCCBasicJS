@@ -79,3 +79,27 @@ console.log(myVar);
 
 
 // Global vs. Local Scope in Functions
+
+var someVar = "Hat";
+function myFun() {
+  var someVar = "Head";
+  return someVar;
+}
+//The function myFun will return "Head" 
+//because the local version of the variable is present.
+
+// Setup
+var outerWear = "T-Shirt";
+
+function myOutfit() {
+  // Only change code below this line
+  var outerWear = "sweater";
+  
+  
+  // Only change code above this line
+  return outerWear;
+}
+
+myOutfit();
+
+
