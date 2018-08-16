@@ -57,6 +57,14 @@ function fun2() {
 
 
 // Local Scope and Functions
+function myTest() {
+  var loc = "foo";
+  console.log(loc);
+}
+myTest(); // logs "foo"
+console.log(loc); // loc is not defined
+
+// Example
 function myLocalScope() {
   'use strict'; // you shouldn't need to edit this line
   var myVar = "test";
@@ -67,5 +75,7 @@ myLocalScope();
 // Run and check the console
 // myVar is not defined outside of myLocalScope
 console.log(myVar);
-
 // Now remove the console log line to pass the test
+
+
+// Global vs. Local Scope in Functions
