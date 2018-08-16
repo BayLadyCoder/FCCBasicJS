@@ -120,3 +120,33 @@ function timesFive(num) {
 
 console.log(timesFive(5));
 console.log(minusSeven(10));
+
+// Understanding Undefined Value returned from a Functio
+/* A function can include the return statement 
+but it does not have to. In the case that the function 
+doesn't have a return statement, when you call it, 
+the function processes the inner code but 
+the returned value is undefined.
+*/
+
+var sum = 0;
+function addSum(num) {
+  sum = sum + num;
+}
+var returnedValue = addSum(3); 
+// sum will be modified but returned value is undefined
+
+// Example
+var sum = 0;
+function addThree() {
+  sum = sum + 3;
+}
+
+// Only change code below this line
+function addFive(num) {
+  sum = sum + 5
+}
+
+
+// Only change code above this line
+var returnedValue = addFive(5);
