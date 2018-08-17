@@ -59,3 +59,44 @@ function testStrict(val) {
 // Change this value to test
 testStrict(10);
 
+//Practice comparing different values
+// Setup
+function compareEquality(a, b) {
+  if (a === b) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+// Change this value to test
+compareEquality(10, "10");
+
+//Comparison with the Inequality Operator
+// Setup
+function testNotEqual(val) {
+  if (val != 99) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+// Change this value to test
+testNotEqual(10);
+
+//Comparison with the Strict Inequality Operator
+// Setup
+function testStrictNotEqual(val) {
+  // Only Change Code Below this Line
+  
+  if (val !== 17) {
+
+  // Only Change Code Above this Line
+
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+// Change this value to test
+testStrictNotEqual(10);
+
