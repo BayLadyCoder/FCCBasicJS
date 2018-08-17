@@ -58,7 +58,8 @@ function switchOfStuff(val) {
       answer = "cat";
       break;
     default:
-      answer = "stuff"
+      answer = "stuff";
+      break;
   }
   
   // Only change code above this line  
