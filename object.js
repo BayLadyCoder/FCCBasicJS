@@ -195,3 +195,31 @@ function checkObj(checkProp) {
 
 // Test your code by modifying these values
 checkObj("gift");
+
+//Manipulating Complex Objects
+//An array which contains one or more objects inside. 
+var myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [ 
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  },
+  // Add record here
+  {
+    "artist": "Bay",
+    "title": "BayLadyCoder",
+    "release_year": 2018,
+    "formats": [
+      "HTML",
+      "CSS",
+      "Javascript"
+    ]
+  }
+];
+
