@@ -56,3 +56,142 @@ var testObj = {
 
 var playerNumber = 16;       // Change this Line
 var player = testObj[playerNumber];   // Change this Line
+
+//Updating Object Properties
+// Example
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+
+ourDog.name = "Happy Camper";
+
+// Setup
+var myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+// Only change code below this line.
+
+myDog.name = "Happy Coder";
+
+
+//Add New Properties to a JavaScript Object
+// Example
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+
+ourDog.bark = "bow-wow";
+
+// Setup
+var myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+// Only change code below this line.
+myDog.bark = "woof";
+
+
+//Delete Properties from a JavaScript Object
+// Example
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"],
+  "bark": "bow-wow"
+};
+
+delete ourDog.bark;
+
+// Setup
+var myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+
+// Only change code below this line.
+
+delete myDog.tails;
+
+
+
+//Using Objects for Lookups
+// Setup
+function phoneticLookup(val) {
+  var result = "";
+
+  // Only change code below this line
+  // switch(val) {
+  //   case "alpha": 
+  //     result = "Adams";
+  //     break;
+  //   case "bravo": 
+  //     result = "Boston";
+  //     break;
+  //   case "charlie": 
+  //     result = "Chicago";
+  //     break;
+  //   case "delta": 
+  //     result = "Denver";
+  //     break;
+  //   case "echo": 
+  //     result = "Easy";
+  //     break;
+  //   case "foxtrot": 
+  //     result = "Frank";
+  // }
+
+  var lookup = {
+    "alpha": "Adams",
+    "bravo": "Boston",
+    "charlie": "Chicago",
+    "delta": "Denver",
+    "echo": "Easy",
+    "foxtrot": "Frank"
+  };
+
+  result = lookup[val];
+
+  // Only change code above this line
+  return result;
+}
+
+// Change this value to test
+phoneticLookup("charlie");
+
+//Testing Objects for Properties
+// Setup
+var myObj = {
+  gift: "pony",
+  pet: "kitten",
+  bed: "sleigh"
+};
+
+function checkObj(checkProp) {
+  // Your Code Here
+  if (myObj.hasOwnProperty(checkProp)) {
+    return myObj[checkProp];
+  } else {
+    return "Not Found";
+  }
+
+}
+
+// Test your code by modifying these values
+checkObj("gift");
