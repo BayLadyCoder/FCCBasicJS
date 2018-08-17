@@ -118,3 +118,28 @@ myArray.unshift(["Paul", 35]);
 
 //Shopping List
 var myList = [["Corn", 5], ["Orange Juice", 2], ["Soy Milk", 1], ["Bread", 2], ["Broccoli", 1]];
+
+//Accessing Nested Arrays
+// Setup
+var myPlants = [
+  { 
+    type: "flowers",
+    list: [
+      "rose",
+      "tulip",
+      "dandelion"
+    ]
+  },
+  {
+    type: "trees",
+    list: [
+      "fir",
+      "pine",
+      "birch"
+    ]
+  }  
+];
+
+// Only change code below this line
+
+var secondTree = myPlants[1].list[1]; // Change this line
