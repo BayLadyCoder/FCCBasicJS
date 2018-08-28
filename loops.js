@@ -159,3 +159,5 @@ return "No such contact";
 
 // Change these values to test your function
 lookUpProfile("Akira", "likes");
+
+//Generate Random Fractions with JavaScript
