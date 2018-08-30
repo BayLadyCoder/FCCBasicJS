@@ -20,6 +20,43 @@ function randomWholeNum() {
   return result;
 }
 
+//Generate Random Whole Numbers within a Range
+/*
+Instead of generating a random number between zero and a given number like we did before, we can generate a random number that falls within a range of two specific numbers.
+
+To do this, we'll define a minimum number min and a maximum number max.
+
+Here's the formula we'll use. Take a moment to read it and try to understand what this code is doing:
+
+Math.floor(Math.random() * (max - min + 1)) + min
+
+
+Create a function called randomRange that takes a range myMin and myMax and returns a random number that's greater than or equal to myMin, and is less than or equal to myMax, inclusive.
+*/
+
+// Example
+function ourRandomRange(ourMin, ourMax) {
+  return Math.floor(Math.random() * (ourMax - ourMin + 1)) + ourMin;
+}
+
+ourRandomRange(1, 9);
+
+// Only change code below this line.
+
+function randomRange(myMin, myMax) {
+  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin; // Change this line
+}
+
+// Change these values to test your function
+var myRandom = randomRange(5, 15);
+
+//Use the parseInt Function
+function convertToInteger(str) {
+  return parseInt(str);
+}
+
+convertToInteger("56");
+
 //Use the parseInt Function with a Radix
 /*
 The parseInt() function parses a string and returns an integer. It takes a second argument for the radix, which specifies the base of the number in the string. The radix can be an integer between 2 and 36.
